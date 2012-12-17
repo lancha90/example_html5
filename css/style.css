@@ -1,0 +1,117 @@
+@font-face {
+	font-family: KatyBerry;
+	src: url(../font/kberry.ttf) format('truetype');
+}
+
+* {
+	margin: 0;
+}
+
+aside {
+	background: #1A9DE0;
+	min-height: 20%;
+	text-transform: uppercase;
+	width: 5%;
+}
+
+body {
+	background: repeating-radial-gradient(black, white 2%);
+	color: white;
+	font-family: KatyBerry, Helvetica, Arial;
+	font-size: 20px;
+}
+
+header {
+	background: #1A9DE0;
+	border-color: olive;
+	border-style: dotted;
+	border-width: 10px;
+	border-radius: 5em 5em 0em 0em;
+	height: 3em;
+	margin: 1em auto;
+	margin-bottom: 0em;
+	position: relative;
+	width: 80%;
+	z-index: -1;
+}
+
+footer {
+	background: #1A9DE0;
+	border-radius: 0em 0em 5em 5em;
+	height: 3em;
+	margin: 0em auto;
+	margin-top: -0.5em;
+	padding-top: 1em;
+	position: relative;
+	text-align: center;
+	width: 80%;
+	z-index: -1;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+li {
+	display: inline-block;
+	margin: 1em;
+}
+ul {
+	text-align: right;
+}
+
+.social {
+	background: #1A9DE0;
+	position: fixed;
+}
+
+#contenedor {
+	background: white;
+	border-radius: 0.5em;
+	margin: 0em auto;
+	margin-top: -0.5em;
+	padding: 1em 0;
+	width: 80%;
+}
+
+#contenedor article:nth-child(odd) {
+
+	background: #1A9DE0;
+	border-radius: 1em;
+	display: inline-block;
+	margin: 0 2%;
+	min-height: 350px;
+	padding: 0.5em;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	transition: all 0.3s ease-in;
+	vertical-align: top;
+	width: 30%;
+}
+
+#contenedor article:nth-child(even) {
+
+	background: blue;
+	display: inline-block;
+	margin: 0 2%;
+	min-height: 200px;
+	padding: 1em;
+	transition: all 0.3s ease-in;
+	vertical-align: top;
+	width: 20%;
+}
+
+#contenedor article:hover {
+	background: #aaa;
+	transform: rotate(4deg) translateX(10px);
+}
+
+#left {
+	float: left;
+}
+
+#rigth {
+	float: right;
+}
+
